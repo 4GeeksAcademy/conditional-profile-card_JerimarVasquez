@@ -36,11 +36,11 @@ function render(variables = {}) {
           <h1>${variables.name} ${variables.lastName} </h1>
           <h2>${variables.role}</h2>
           <h3>${variables.country}, ${variables.city}</h3>
-          <ul class="position-right">
-            <li><a href="https://twitter.com/jeri_vqz"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/Jerimar-DV"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/JerimarVasquezRojas"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/jeri_vqz"><i class="fab fa-instagram"></i></a></li>
+          <ul class="${variables.socialMediaPosition}">
+            <li><a href="https://twitter.com/${variables.twitter}"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${variables.github}"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/${variables.linkedin}"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${variables.instagram}"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -64,8 +64,8 @@ window.onload = function() {
     github: null,
     linkedin: null,
     instagram: null,
-    name: "name",
-    lastName: "lastName",
+    name: null,
+    lastName: null,
     role: null,
     country: null,
     city: null
